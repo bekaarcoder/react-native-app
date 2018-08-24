@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import axios from 'axios';
+import AlbumDetail from './AlbumDetail';
 
 class AlbumList extends Component {
   state = {
@@ -16,10 +17,18 @@ class AlbumList extends Component {
   }
 
   render() {
-    console.log(this.state);
+    const {albums} = this.state;
+    let list;
+    if(albums && albums.length !== 0) {
+      list = albums.map((album, index) => (
+        <AlbumDetail key={index} albumDetail={album} />
+      ));
+    } else {
+      list = <Text>Loading...</Text>
+    }
     return (
       <View>
-        <Text>ALbum List</Text>
+        {list}
       </View>
     )
   }
