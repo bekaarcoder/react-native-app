@@ -48,24 +48,6 @@ const styles = {
     height: 300,
     flex: 1,
     width: null
-  },
-  btnStyle: {
-    flex: 1,
-    alignSelf: 'stretch',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 2,
-    borderWidth: 1,
-    borderColor: '#17a2b8',
-    marginLeft: 5,
-    marginRight: 5
-  },
-  textStyle: {
-    fontSize: 16,
-    color: '#17a2b8',
-    alignSelf: 'center',
-    fontWeight: '600',
-    paddingTop: 5,
-    paddingBottom: 5
   }
 }
 
