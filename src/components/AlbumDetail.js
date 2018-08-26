@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, Linking } from 'react-native'
 import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
@@ -23,7 +23,7 @@ const AlbumDetail = (props) => {
       </CardSection>
 
       <CardSection>
-        <Button />
+        <Button onPress={() => Linking.openURL(url)} />
       </CardSection>
     </Card>
   )
